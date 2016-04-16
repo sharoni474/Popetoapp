@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v_row_container"
+    style="@style/AppTheme.Movie">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/iv_thumbnail"
+        style="@style/AppTheme.Image.Movie"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/iv_thumbnail"
+        style="@style/AppTheme.Title.Movie"/>
+
+    <TextView
+        android:id="@+id/tv_rates"
+        android:layout_below="@+id/tv_title"
+        style="@style/AppTheme.Subtitle.Movie"/>
+
+</RelativeLayout>

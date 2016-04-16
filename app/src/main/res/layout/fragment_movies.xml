@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MoviesFragment"
+    style="@style/AppTheme.RootView">
+
+    <!-- ProgressBar -->
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/AppTheme.ProgressBar"/>
+
+    <!-- GridView -->
+
+    <GridView
+        android:id="@+id/gv_tv_shows"
+        style="@style/AppTheme.GridView"/>
+
+</RelativeLayout>

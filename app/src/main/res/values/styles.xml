@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.RootView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AppTheme.RootView.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppTheme.GridView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:numColumns">@integer/grid_columns</item>
+        <item name="android:verticalSpacing">@dimen/main_margin</item>
+        <item name="android:horizontalSpacing">@dimen/main_margin</item>
+    </style>
+
+    <style name="AppTheme.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Subtitle">
+        <item name="android:textColor">@color/subtitle_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/subtitle_size</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Image">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@color/main_color</item>
+    </style>
+
+
+    <style name="AppTheme.Movie">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Image.Movie">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/poster_height</item>
+    </style>
+
+    <style name="AppTheme.Title.Movie">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin</item>
+    </style>
+
+    <style name="AppTheme.Subtitle.Movie">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin</item>
+        <item name="android:paddingBottom">@dimen/main_margin</item>
+    </style>
+
+    <style name="AppTheme.Image.MovieFanArt">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/fan_art_height</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <integer name="grid_columns">2</integer>
+    <color name="main_color">#FFDDDDDD</color>
+    <color name="title_color">#FF727A7C</color>
+    <color name="subtitle_color">#FF57585A</color>
+    <dimen name="poster_height">200dip</dimen>
+    <dimen name="fan_art_height">185dip</dimen>
+    <dimen name="main_margin">10dp</dimen>
+    <dimen name="default_margin">5dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="subtitle_size">16sp</dimen>
+</resources>
