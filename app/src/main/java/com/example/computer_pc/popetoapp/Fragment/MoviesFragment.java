@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link MoviesFragment.OnFragmentInteractionListener} interface
+ * {@link- MoviesFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link MoviesFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -143,7 +143,7 @@ public class MoviesFragment extends Fragment {
     private List<Movie> parse(JSONObject json) throws JSONException {
         ArrayList<Movie> movies = new ArrayList<Movie>();
 
-      //  for (int i = 0; i < json.length(); i++) {
+        for (int i = 0; i < 8; i++) {
             int mID = json.getInt("id");
             String mTitle = json.getString("title");
             String mCritics = json.getString("critics_consensus");
@@ -155,7 +155,7 @@ public class MoviesFragment extends Fragment {
 
             Movie movie = new Movie(mID, mTitle, mCritics, mPosters, mRate, mGenres, mSynopsis);
             movies.add(movie);
-   //     }
+        }
         return movies;
     }
 
