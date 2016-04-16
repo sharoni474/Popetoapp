@@ -53,7 +53,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie> {
         holder.ivPoster.setImageUrl(movie.getPosterURL(), mImageLoader);
 
         holder.tvTitle.setText(movie.getTitle());
-        holder.tvRate.setText(movie.getRate()+"/100");
+        holder.tvRate.setText("Rated " +movie.getRate()+"/100");
 
         return convertView;
     }
